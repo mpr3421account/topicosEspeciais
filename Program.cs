@@ -42,3 +42,9 @@ switch (num)
         break;
 }
 Console.WriteLine(day);
+
+//Condição ternária
+double preco = 34.5;
+double desconto = (preco < 35.0) ? preco * 0.1 : preco * 0.05;
+Console.WriteLine(desconto);
+Console.WriteLine(preco += desconto);
