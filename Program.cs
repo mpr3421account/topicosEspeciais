@@ -14,35 +14,31 @@ Console.WriteLine(z);
 int num = int.Parse(Console.ReadLine());
 string day;
 
-if(num == 1)
+switch (num)
 {
-    Console.WriteLine("Sunday");
+    case 1:
+        day = "Sunday";
+        break;
+    case 2:
+        day = "Monday";
+        break;
+    case 3:
+        day = "Tuesday";
+        break;
+    case 4:
+        day = "Wednesday";
+        break;
+    case 5:
+        day = "Thursday";
+        break;
+    case 6:
+        day = "Friday";
+        break;
+    case 7:
+        day = "Saturday";
+        break;
+    default:
+        day = "Invalid value";
+        break;
 }
-else if(num == 2)
-{
-    Console.WriteLine("Monday");
-}
-else if (num == 3)
-{
-    Console.WriteLine("Tuesday");
-}
-else if (num == 4)
-{
-    Console.WriteLine("Wednesday");
-}
-else if (num == 5)
-{
-    Console.WriteLine("Thursday");
-}
-else if (num == 6)
-{
-    Console.WriteLine("Friday");
-}
-else if (num == 7)
-{
-    Console.WriteLine("Saturday");
-}
-else
-{
-    Console.WriteLine("Invalid Value");
-}
+Console.WriteLine(day);
